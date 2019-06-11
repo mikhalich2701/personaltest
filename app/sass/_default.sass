@@ -1,0 +1,61 @@
+/*====================DEFAULT SETTINGS=================*/
+
+*
+	box-sizing: border-box
+	&:before, &:after
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+	font-family: $mainfont
+	font-family: $p
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5
+	font-family: $mainfont
+h1, .h1
+	font-size: $h1
+h2, .h2
+	font-size: $h2
+h3, .h3
+	font-size: $h3
+	text-transform: uppercase
+h4, .h4
+	font-size: $h4
+h5, .h5
+	font-size: $h5
+
+a
+  text-decoration: none
+  &:hover
+  	text-decoration: none
+
+/*================================ADD CLASS=============================*/
+
+.img
+	display: block
+	max-width: 100%
+	height: auto
