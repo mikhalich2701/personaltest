@@ -95,6 +95,30 @@ a:hover {
   text-decoration: none;
 }
 
+button,
+input,
+select,
+a,
+textarea {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:active,
+button:focus,
+input:active,
+input:focus,
+select:active,
+select:focus,
+a:active,
+a:focus,
+textarea:active,
+textarea:focus {
+  border: none;
+  outline: none;
+}
+
 /*================================ADD CLASS=============================*/
 
 .img {
@@ -137,6 +161,21 @@ a:hover {
   border-radius: 10px;
   background: #fdbe00;
   cursor: pointer;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  -o-transition: box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+}
+
+.button:hover {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
+}
+
+.button:active {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
 }
 
 /*==================================SITE===============================*/
